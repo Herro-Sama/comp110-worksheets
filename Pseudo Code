@@ -1,1 +1,14 @@
-
+Open Terminal
+Generate words and noise
+Store correct word
+loop{
+allow player to choose words
+  if choice is correct 
+    set terminal state to hacked
+    end game
+  elif player lives equals zero
+    set terminal state to failed
+    end game
+  else player wrong
+    remove a player life
+}
