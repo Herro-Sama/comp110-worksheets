@@ -2,4 +2,4 @@
 
 Please upload the screenshots of your SpaceChem circuits to this directory.
 
-Please also edit this file (`README.md`) to include a link to your YouTube playlist.
+Playlist URL: https://www.youtube.com/watch?v=2sxoP8jvbZU&list=PLjPzwvId6PQSKi7jYCWjVsCfS5wRaypMo
