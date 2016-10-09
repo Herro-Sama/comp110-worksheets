@@ -1,6 +1,7 @@
 Open Terminal
 Generate words and noise
 Store correct word
+set player lives to 4
 loop{
 allow player to choose words
   if choice is correct 
