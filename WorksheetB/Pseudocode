@@ -1,4 +1,3 @@
-```
 Open Terminal
 Generate words and noise
 Store correct word
@@ -14,5 +13,3 @@ allow player to choose words
   else player wrong
     remove a player life
 }
-```
-![Screenshot](FalloutHackFlow.pdf)
