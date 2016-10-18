@@ -1,4 +1,5 @@
-# COMP110 Worksheets
+# Worksheet C
 
-This is the base repository for your COMP110 worksheet tasks. Begin by *forking* this repository into your own GitHub account: click the "Fork" button in the upper right corner of the page.
-
+(a) This algorithm scans through two lists and compares if either of the lists has a duplicate in the counterpart list 
+(b) The reason that this algorithm is quadratic, is because everytime you add a new item it has to run that against every possible result in the opposite list.
+(c) 
