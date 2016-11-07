@@ -1,8 +1,5 @@
 class OxoBoard:
-    def __init__(self,x ,y):
-
-        self.x = x
-        self.y = y
+    def __init__(self):
         self.board = {(0,0):0,(0,1):0,(0,2):0,(1,0):0,(2,0):0,(1,1):0,(2,2):0,(1,2):0,(2,1):0}
     def get_square(self, x, y):
         """ Return 0, 1 or 2 depending on the contents of the specified square. """
@@ -33,28 +30,28 @@ class OxoBoard:
                     return True
         return False
 
-    def get_winner(self, player_number):
+    def get_winner(self):
         """ If a player has three in a row, return 1 or 2 depending on which player.
             Otherwise, return 0. """
         if self.board[1, 1] != 0:
             if self.board[1, 1] == self.board[0, 0]:
                 if self.board[2, 2] == self.board[1, 1]:
-                    return player_number
+                    return self.board[1,1]
             if self.board[2, 0] == self.board[1, 1]:
                 if self.board[0, 2] == self.board[1, 1]:
-                    return player_number
+                    return self.board[1,1]
 
         for i in xrange(0, 3):
             # Checks rows
             if self.board[0, i] != 0:
                 if self.board[0, i] == self.board[1, i]:
                     if self.board[0, i] == self.board[2, i]:
-                        return player_number
+                        return self.board[i,i]
             # check columns
             if self.board[i, 0] != 0:
                 if self.board[i, 0] == self.board[i, 1]:
                     if self.board[i, 1] == self.board[i, 2]:
-                        return player_number
+                        return self.board[i,i]
         return 0
 
 
@@ -97,7 +94,7 @@ def input_square():
 
 # The main game. You should not need to edit this.
 if __name__ == '__main__':
-    board = OxoBoard(3, 3)
+    board = OxoBoard()
     current_player = 1
     while True:
         board.show()
@@ -106,7 +103,7 @@ if __name__ == '__main__':
 
         if board.set_square(x, y, current_player):
             # Move was played successfully, so check for a winner
-            winner = board.get_winner(current_player)
+            winner = board.get_winner()
             if winner != 0:
                 print "Player", winner, "wins!"
                 break   # End the game
