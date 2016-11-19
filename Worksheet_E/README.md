@@ -31,3 +31,14 @@ S1 = 1
 outer()
 inner()		
 ~~~
+(d)
+
+
+(e)
+~~~
+addi $s0, $zero, 10
+addi $s1, $zero, 1
+Loop: mul $s1, $s0, $s1
+addi $s0, $s0, -1
+bne $s0, 0, Loop
+~~~
