@@ -11,5 +11,7 @@ allow player to choose words
     set terminal state to failed
     end game
   else player wrong
+    check correct word against players word
+    'display how many letters are correct and in the correct place as a number'+'/'+ number of characters in word.
     remove a player life
 }
