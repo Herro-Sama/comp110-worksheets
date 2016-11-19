@@ -8,7 +8,7 @@ While S3 != 0:
 	S3 -= 1
 ~~~~
 (b)
-
+The value of S2 is being increased each loop by whatever S1 is, this means that it will be effectively multiplied by S1, S0 times.
 
 (c)
 ~~~
