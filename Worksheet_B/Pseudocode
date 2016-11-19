@@ -2,6 +2,14 @@ Open Terminal
 Generate words and noise
 Store correct word
 set player lives to 4
+
+Check correct word()
+CorrectCharacter equals zero
+do a range for the number of characters in word
+  if CorrectWord[range] == PlayerWord[range]
+    CorrectCharacters += 1
+Display correctcharacters against total characters
+
 loop{
 allow player to choose words
   if choice is correct 
@@ -11,7 +19,6 @@ allow player to choose words
     set terminal state to failed
     end game
   else player wrong
-    check correct word against players word
-    'display how many letters are correct and in the correct place as a number'+'/'+ number of characters in word.
+    Check correct word()
     remove a player life
 }
