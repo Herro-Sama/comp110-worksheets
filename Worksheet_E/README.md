@@ -32,7 +32,8 @@ outer()
 inner()		
 ~~~
 (d)
-
+S2 is set to zero while S3 is set to S0, after this happens S2 is multiplied by S1, S3 times.
+Once this happens S1 is updated to the value of S2, S0 has one removed from it's total and the loop then repeats.
 
 (e)
 ~~~
